@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .btn-reset {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .list-reset {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .project__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: #1f4ae2;
+    text-transform: uppercase;
+  }
+
+  .project__link{
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    color: white;
+    width: 100%;
+    max-width: 540px;
+    text-align: center;
+    padding: 28px 0;
+    box-shadow: 4px 4px 50px 0 rgba(66, 66, 66, 0.25);
+    background: #1f4ae2;
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+
+    &:hover{
+        color: #1f4ae2;
+        background: white;
+        border-color: #1f4ae2;
+        cursor: pointer;
+    }
+  }
+
+  .h-reset{
+    margin: 0;
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+  }

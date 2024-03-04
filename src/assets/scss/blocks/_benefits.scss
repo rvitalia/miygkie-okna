@@ -1,0 +1,30 @@
+.benefits {
+    padding-top: 90px;
+    color: black;
+}
+
+.benefits__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 10px;
+    row-gap: 20px;
+    align-items: center;
+}
+
+.benefits__inner__item {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    & dd {
+        font-weight: 700;
+        font-size: clamp(24px, 4vw, 48px);
+        color: #1f4ae2;
+    }
+
+    & dt {
+        font-family: "Georgia", sans-serif;
+        font-weight: 700;
+        font-size: clamp(20px, 4vw, 24px);
+    }
+}

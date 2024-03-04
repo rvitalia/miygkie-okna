@@ -1,0 +1,57 @@
+// @import 'vendor/reset';
+@import 'blocks/vars';
+@import 'mixins';
+// @import "./vendor/animate";
+
+
+@import 'fonts';
+@import 'settings';
+
+
+html,
+body {
+    height: 100%;
+    //    background-color: #080808;
+    color: white;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+}
+
+
+.main {
+    height: 100%;
+    flex: 1 0 auto;
+}
+
+/* Работает в Chrome, Edge и Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(20, 16, 36, 0.08);
+    border-radius: 40px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #141024;
+    border-radius: 40px;
+    // border: 3px solid orange;
+}
+
+// =============scrollbar=============
+
+// ======blocks=========
+
+@import 'blocks/container';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/benefits';
+@import 'blocks/about';
+@import 'blocks/katalog';
+@import 'blocks/footer';
