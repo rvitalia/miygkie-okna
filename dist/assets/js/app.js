@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".accordion-item").forEach(e=>{e.querySelector(".accordion-header").addEventListener("click",function(){e.classList.toggle("active")})})});
