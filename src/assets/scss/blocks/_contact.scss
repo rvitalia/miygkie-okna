@@ -1,0 +1,104 @@
+.contact {
+    margin-top: 90px;
+    margin-bottom: 249px;
+    @include bg-cover;
+    padding-top: 130px;
+}
+
+.contact__inner {
+    width: 100%;
+    max-width: 1219px;
+    margin: 0 auto;
+    max-height: 460px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 60px 52px;
+    align-items: center;
+
+    box-shadow: 3px 5px 50px 0 rgba(209, 209, 209, 0.25);
+    background: #fff;
+    border: 1px solid #f2f2f2;
+
+    font-family: "Georgia", sans-serif;
+    color: black;
+
+    position: relative;
+    bottom: -249px;
+
+    & li {
+        padding: 25px;
+
+        &+li {
+            border-left: 1px solid #000;
+        }
+
+        & form {}
+    }
+
+    & label {
+        font-weight: 400;
+        font-size: 32px;
+        display: grid;
+        grid-template-columns: 140px 1fr;
+        align-items: flex-end;
+        column-gap: 10px;
+
+        & input {
+            font-weight: 400;
+            font-size: 32px;
+            border: none;
+            border-bottom: 1px solid black;
+        }
+
+        &+label {
+            margin-top: 30px;
+        }
+    }
+}
+
+.contact__inner__title {
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    // padding-top: 85px;
+}
+
+.contact__inner__subtitle {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contact__inner__file {
+    font-weight: 400;
+    font-size: 20px;
+    position: relative;
+    white-space: nowrap;
+
+    & input[type="file"]{
+        position: absolute;
+        font-size: 20px;
+        top: 0;left: 0;
+        opacity: 0;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+
+    & button{
+        background: none;
+        border: none;
+    }
+
+    & small{
+        font-size: inherit;
+    }
+
+}
+
+.contact__inner__submit {
+    max-width: 362px;
+    margin-top: 30px;
+}
