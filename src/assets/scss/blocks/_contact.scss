@@ -38,7 +38,7 @@
 
     & label {
         font-weight: 400;
-        font-size: 32px;
+        font-size: 24px;
         display: grid;
         grid-template-columns: 140px 1fr;
         align-items: flex-end;
@@ -46,7 +46,7 @@
 
         & input {
             font-weight: 400;
-            font-size: 32px;
+            font-size: 24px;
             border: none;
             border-bottom: 1px solid black;
         }
@@ -59,15 +59,15 @@
 
 .contact__inner__title {
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
     text-align: center;
     // padding-top: 85px;
 }
 
 .contact__inner__subtitle {
-    padding-top: 10px;
+    padding-top: 20px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -79,7 +79,7 @@
 
     & input[type="file"]{
         position: absolute;
-        font-size: 20px;
+        font-size: 16px;
         top: 0;left: 0;
         opacity: 0;
         cursor: pointer;
@@ -90,10 +90,16 @@
     & button{
         background: none;
         border: none;
+
+        & img{
+            margin-left: auto;
+  display: block;
+        }
     }
 
     & small{
-        font-size: inherit;
+        font-size: 16px;
+        cursor: pointer;
     }
 
 }

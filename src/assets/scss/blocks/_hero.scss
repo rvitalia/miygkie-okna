@@ -12,7 +12,7 @@
 .hero__inner__item {}
 
 .hero__inner__item__title {
-    font-size: clamp(36px, 5.5vw, 64px);
+    font-size: clamp(36px, 5.5vw, 52px);
     font-weight: 700;
     line-height: 1.22;
     letter-spacing: 0%;
@@ -23,7 +23,7 @@
 
 .hero__inner__item__subtitle {
 
-    font-size: clamp(16px, 3.2vw, 32px);
+    font-size: clamp(16px, 3.2vw, 24px);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0%;
@@ -33,7 +33,7 @@
 }
 
 .hero__inner__item__discount {
-    font-size: clamp(14px, 3.2vw, 24px);
+    font-size: clamp(14px, 3.2vw, 16px);
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0%;
@@ -107,7 +107,7 @@
     background: rgba(255, 255, 255, 0.5);
     color: black;
     font-family: Georgia, serif;
-    padding: 79px 34px 56px;
+    padding: 50px 34px 56px;
     max-width: 599px;
     margin-left: auto;
     display: flex;
@@ -116,7 +116,7 @@
 
     & label {
 
-        font-size: clamp(14px, 5vw, 24px);
+        font-size: clamp(14px, 5vw, 20px);
         font-weight: 400;
         line-height: 1.2;
         letter-spacing: 0%;
@@ -137,7 +137,7 @@
             max-width: 311px;
             margin-left: auto;
             padding-left: 10px;
-            font-size: clamp(14px, 5vw, 24px);
+            font-size: clamp(14px, 5vw, 20px);
         }
 
         & + label{
@@ -151,13 +151,13 @@
 }
 
 .hero__inner__item__form__title {
-    font-size: clamp(16px, 4vw, 20px);
+    font-size: clamp(16px, 4vw, 22px);
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 0%;
     text-align: center;
     padding-bottom: 61px;
-    max-width: 395px;
+    max-width: 420px;
 }
 
 .hero__inner__item__form__button {

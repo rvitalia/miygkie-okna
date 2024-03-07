@@ -25,6 +25,7 @@
     & dt {
         font-family: "Georgia", sans-serif;
         font-weight: 700;
-        font-size: clamp(20px, 4vw, 24px);
+        font-size: clamp(18px, 4vw, 22px);
+        max-width: 180px;
     }
 }

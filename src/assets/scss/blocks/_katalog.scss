@@ -43,11 +43,11 @@
     
     & h4 {
         font-weight: 700;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     & p{
-        font-size: 20px;
+        font-size: 16px;
         font-family: "Georgia", sans-serif;
         margin-top: 10px;
         margin-bottom: 20px;
@@ -58,4 +58,7 @@
     font-size: 16px;
     padding: 19px 0;
     max-width: 215px;
+}
+.katalog__inner__link {
+    max-width: 368px;
 }

@@ -7,7 +7,7 @@
 .ourcontacts__title {}
 
 .ourcontacts__inner {
-    padding-top: 30px;
+    //padding-top: 30px;
 
     display: grid;
     // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
@@ -24,7 +24,7 @@
             display: block;
             font-family: "Georgia", serif;
             font-weight: 400;
-            font-size: 32px;
+            font-size: 24px;
 
             & dt span{
                 display: block;
