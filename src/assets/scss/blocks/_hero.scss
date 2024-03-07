@@ -107,12 +107,16 @@
     background: rgba(255, 255, 255, 0.5);
     color: black;
     font-family: Georgia, serif;
-    padding: 50px 34px 56px;
-    max-width: 599px;
+    padding: 40px 20px 40px;
+    max-width: 550px;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    & form {
+        width: 100%;
+    }
 
     & label {
 
@@ -127,7 +131,7 @@
         column-gap: 30px;
         margin: 0 auto 11px;
         width: 100%;
-        max-width: 441px;
+        max-width: 420px;
 
         & input {
             border: 1px solid rgb(255, 255, 255);
@@ -161,12 +165,12 @@
 }
 
 .hero__inner__item__form__button {
-    padding: 20px 50px;
+    padding: 15px 25px;
     font-size: clamp(12px, 4vw, 16px);
 }
 
 .--white {
-    margin-right: 9px;
+    margin-right: 10px;
     border: 1px solid rgb(31, 74, 226);
     background: rgb(255, 255, 255);
     transition: all 0.3s linear;
@@ -182,8 +186,15 @@
     box-shadow: 4px 4px 50px 0px rgba(66, 66, 66, 0.25);
     background: rgb(31, 74, 226);
     transition: all 0.3s linear;
+    color: white;
     &:hover{
         background-color: #fff;
         color: rgb(31, 74, 226);
     }
+}
+
+.form__flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
