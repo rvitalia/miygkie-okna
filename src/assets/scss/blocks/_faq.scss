@@ -1,25 +1,48 @@
-.faq{
-    padding-top: 90px;
+.faq {
+    padding-top: 80px;
     color: black;
+    padding-bottom: 120px;
+    position: relative;
 }
 
-.faq__title{
-    color: black;
-    text-align: center;
+.faq__title {
+    font-family: var(--third-family);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 82px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 90px;
+
+    & strong{
+        color: rgb(44, 53, 88);
+    }
 }
 
-.accordion{
-    padding-top: 30px;  
-    font-family:  "Georgia", sans-serif;
+.accordion {
+    padding: 30px 0;
+    max-width: 800px;                                       
+    color: rgb(44, 53, 88);
+    font-size: 19px;
     font-weight: 400;
-    font-size: 24px;
+    line-height: 160%;
+    letter-spacing: -2%;
+    text-align: left;
 }
+
 .accordion-item {
     overflow: hidden;
-    transition: max-height 0.3s ease; /* Добавленный код для плавности */
-    max-height: 50px; /* Максимальная высота для закрытой секции */
+    transition: max-height 0.3s ease;
+    /* Добавленный код для плавности */
+    max-height: 80px;
+    /* Максимальная высота для закрытой секции */
+    border-bottom: 1px solid rgb(31, 74, 226);
 
-    & + &{
+    &+& {
         margin-top: 15px;
     }
 }
@@ -27,13 +50,14 @@
 .accordion-header {
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-between;
+    padding: 24px 10px;
     cursor: pointer;
 }
 
 .accordion-icon {
     margin-right: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s linear;
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -43,10 +67,15 @@
     align-items: center;
     justify-content: center;
 
-    & b{
-        font-weight: 400;
-        position: relative;
-        top: -2px;
+    & button {
+        // position: relative;
+        // top: -2px;
+        width: 40px;
+        height: 40px;
+        background-color: #1F4AE2;
+        border-radius: 50%;
+        border: none;
+        flex-shrink: 0;
     }
 }
 
@@ -56,9 +85,16 @@
 }
 
 .accordion-item.active {
-    max-height: 500px; /* Установите достаточную максимальную высоту для отображения контента */
+    max-height: 500px;
+    /* Установите достаточную максимальную высоту для отображения контента */
 }
 
 .accordion-item.active .accordion-icon {
     transform: rotate(45deg);
+}
+.faq__bg{
+    position: absolute;
+    left: 50%;
+    top: -200px;
+    z-index: -1;
 }

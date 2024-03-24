@@ -24,6 +24,10 @@ body {
     letter-spacing: -0.02em;
     color: #2c3558;
 }
+section{
+    max-width: 1920px;
+    margin: 0 auto;
+}
 
 
 .main {
@@ -60,9 +64,9 @@ body {
 @import 'blocks/about';
 @import 'blocks/katalog';
 @import 'blocks/order';
-@import 'blocks/trust';
+// @import 'blocks/trust';
 @import 'blocks/contact';
 @import 'blocks/faq';
-@import 'blocks/findus';
+// @import 'blocks/findus';
 @import 'blocks/ourcontacts';
 @import 'blocks/footer';

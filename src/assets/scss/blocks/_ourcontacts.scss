@@ -1,18 +1,28 @@
 .ourcontacts {
-    color: black;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    position: relative;
+    padding: 90px 0;
+    margin-bottom: 200px;
 }
 
-.ourcontacts__title {}
+.ourcontacts__title {
+    color: rgb(31, 74, 226);
+    font-family: var(--third-family);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+}
 
 .ourcontacts__inner {
     //padding-top: 30px;
-
-    display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-template-columns: 1fr 580px;
-    align-items: center;
+    border-radius: 10px;
+    /* #F3F5FB */
+    background: rgb(243, 245, 251);
+    padding: 40px 80px;
+    max-width: 647px;
+    position: relative;
+    z-index: 1000;
 
     & li {
         display: flex;
@@ -22,27 +32,52 @@
         & dl {
             padding-top: 27px;
             display: block;
-            font-family: "Georgia", serif;
             font-weight: 400;
             font-size: 24px;
 
-            & dt span{
+            & dd {
+                color: rgb(31, 74, 226);
+                font-family: var(--third-family);
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 110%;
+                letter-spacing: 0%;
+                text-align: left;
+            }
+
+
+            & dt {
+                color: rgb(44, 53, 88);
+                font-size: 19px;
+                font-weight: 400;
+                line-height: 160%;
+                letter-spacing: -2%;
+                text-align: left;
+            }
+
+            & dt span {
                 display: block;
                 padding-top: 10px;
             }
 
-            & a{
+            & a {
                 display: block;
                 transition: color 0.3s linear;
 
-                &:hover{
+                &:hover {
                     color: #1f4ae2;
                 }
-                
-                & +a{
+
+                &+a {
                     padding-top: 10px;
                 }
             }
         }
     }
+}
+
+.ourcontacts__map {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 }
