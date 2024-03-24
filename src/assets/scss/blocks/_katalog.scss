@@ -1,64 +1,86 @@
 .katalog {
-    padding-top: 90px;
-    color: black;
+    padding-top: 120px;
+    position: relative;
+    padding-bottom: 120px;
 }
 
 .katalog__inner {}
 
 
-.katalog__inner__title {}
+.katalog__inner__title {
+    padding-left: 80px;
+    font-size: 60px;
+    font-family: var(--third-family);
+    font-weight: 700;
+    line-height: 110%;
+    color: rgb(44, 53, 88);
+    background-repeat: no-repeat;
+    background-position: left 100%;
+}
 
 .katalog__inner__wrapper {
     margin-top: 60px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 35px;
-    margin-bottom: 60px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 40px;
+    // row-gap: 360px;
+    // margin-bottom: 60px;
 }
 
 .katalog__inner__wrapper__item {
-   position: relative;
+    // position: relative;
 }
 
 .katalog__inner__wrapper__item__img {
-    height: 100%;
-    max-height: 682px;
-    padding-bottom: 122px;
 }
 
 .katalog__inner__wrapper__item__data {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+position: relative;
+top: -90px;
 
     width: 100%;
-    max-width: 90%;
-    box-shadow: 3px 5px 50px 0 rgba(209, 209, 209, 0.25);
-    border: 1px solid #f2f2f2;
-    background: #fffdfd;
+    max-width: 95%;
+    border-radius: 5px;
+    background: rgb(249, 250, 255);
     margin: 0 auto;
-    padding: 22px 24px 37px;
-    
+    padding: 25px 30px 25px 30px;
+
     & h4 {
+        color: rgb(0, 0, 0);
+        font-family: var(--third-family);
+        font-size: 40px;
         font-weight: 700;
-        font-size: 20px;
+        line-height: 110%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 4px;
     }
 
-    & p{
-        font-size: 16px;
-        font-family: "Georgia", sans-serif;
-        margin-top: 10px;
-        margin-bottom: 20px;
+    & p {
+        color: rgb(0, 0, 0);
+        font-size: 19px;
+        line-height: 160%;
+        letter-spacing: -2%;
+        text-align: left;
+        margin-bottom: 25px;
     }
 
 }
+
 .katalog__inner__wrapper__item__data__link {
     font-size: 16px;
-    padding: 19px 0;
-    max-width: 215px;
+    padding: 17px 30px;
+    max-width: 170px;
 }
+
 .katalog__inner__link {
-    max-width: 368px;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+.katalog__img {
+    position: absolute;
+    left: -38%;
+    top: -7%;
+z-index: -1;
 }

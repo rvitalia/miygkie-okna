@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -49,14 +51,14 @@
             <div class="header__bottom --main">
                 <div class="container">
                     <ul class="header__bottom__menu list-reset">
-                        <li>Каталог</li>
-                        <li>Наши проекты</li>
-                        <li>Цены</li>
-                        <li>Онлайн - оплата</li>
-                        <li>Калькулятор</li>
-                        <li>Контакты</li>
-                        <li>Акция</li>
-                        <li>Полезная информация</li>
+                        <li><a href="">Каталог</a></li>
+                        <li><a href="">Наши проекты</a></li>
+                        <li><a href="">Цены</a></li>
+                        <li><a href="">Онлайн - оплата</a></li>
+                        <li><a href="">Калькулятор</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Акция</a></li>
+                        <li><a href="">Полезная информация</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,16 +86,21 @@
                     </div>
                     <div class="hero__inner__item">
                         <div class="hero__inner__item__form">
-                            <div class="h-reset hero__inner__item__form__title" style="background-image: url(./assets/images/hero/Tel.svg);"><span>давайте</span> <strong>свяжемся</strong></div>
+                            <div class="h-reset hero__inner__item__form__title"
+                                style="background-image: url(./assets/images/hero/Tel.svg);"><span>давайте</span>
+                                <strong>свяжемся</strong>
+                            </div>
                             <form action="">
                                 <input type="text" name="" id="name" placeholder="Имя">
                                 <input type="tel" name="" id="tel" placeholder="Телефон">
                                 <div class="form__flex">
-                                    <input type="submit" class="hero__inner__item__form__button project__link" value="Заказать звонок">
+                                    <input type="submit" class="hero__inner__item__form__button project__link"
+                                        value="Заказать звонок">
                                     <a href="" class="hero__inner__item__form__button --white">Калькулятор</a>
                                 </div>
                             </form>
-                            <div class="hero__inner__item__form__gift" style="background-image: url(./assets/images/hero/gift.svg);">
+                            <div class="hero__inner__item__form__gift"
+                                style="background-image: url(./assets/images/hero/gift.svg);">
                                 <dl class="h-reset">
                                     <dd>5%</dd>
                                     <dt>Скидка для тех, кто найдёт конкурента, у которого дешевле</dt>
@@ -105,37 +112,234 @@
             </div>
             
             
-            <div class="benefits">
-                <div class="benefits__inner container">
-                    <dl class="benefits__inner__item h-reset">
-                        <dd class="h-reset">100%</dd>
-                        <dt>выполненных заказов в срок</dt>
-                    </dl>
-                    <dl class="benefits__inner__item h-reset">
-                        <dd class="h-reset">10</dd>
-                        <dt>и более лет срок службы наших окон</dt>
-                    </dl>
-                    <dl class="benefits__inner__item h-reset">
-                        <dd class="h-reset">2</dd>
-                        <dt>года гарантии</dt>
-                    </dl>
-                    <dl class="benefits__inner__item h-reset">
-                        <dd class="h-reset">100%</dd>
-                        <dt>безопасно, т.к. наши окна не бьются</dt>
-                    </dl>
+            <section class="review">
+                <div class="container">
+                    <h2 class="review__title" style="background-image: url(./assets/images/review/Vector.png);">отзывы</h2>
+                    <div class="review__inner">
+                        <!-- Slider main container -->
+                        <div class="swiper__review__buttons">
+                            <div class="swiper-button-prev"><img src="./assets/images/review/Arrow-left.svg" alt="left" width="46"
+                                    height="22"></div>
+                            <div class="swiper-button-next"><img src="./assets/images/review/arrow-right.svg" alt="right" width="46"
+                                    height="22"></div>
+                        </div>
+                        <div class="swiper swiper__review">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="review__inner__slide">
+                                        <div class="review__inner__data">
+                                            <time datetime="21-04-2020">21.04.2020
+                                                <hr>
+                                            </time>
+                                            <div class="reviev__inner__img">
+                                                <img src="./assets/images/review/foto.png" alt="foto" width="190" height="190">
+                                            </div>
+                                            <div class="review__inner__main">
+                                                <address class="review__inner__main__address"
+                                                    style="background-image: url(./assets/images/review/geo.svg);">
+                                                    ул. Городова, 38, г. Зеленоград
+                                                </address>
+                                                <h3 class="review__inner__main__title h-reset">Юрий Александров</h3>
+                                                <p>Производственная компания “Стильные Системы” - это московский производитель, а не
+                                                    посредник со своей накруткой. Производственная компания “Стильные Системы” - это
+                                                    московский производитель, а не посредник со своей накруткой</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="review__inner__slide">
+                                        <div class="review__inner__data">
+                                            <time datetime="21-04-2020">21.04.2020</time>
+                                            <div class="reviev__inner__img">
+                                                <img src="./assets/images/review/foto.png" alt="foto" width="190" height="190">
+                                            </div>
+                                            <div class="review__inner__main">
+                                                <address class="review__inner__main__address"
+                                                    style="background-image: url(./assets/images/review/geo.svg);">
+                                                    ул. Городова, 38, г. Зеленоград
+                                                </address>
+                                                <h3 class="review__inner__main__title">ул. Городова, 38, г. Зеленоград</h3>
+                                                <p class="review__inner__main__text">Производственная компания “Стильные Системы” -
+                                                    это московский производитель, а не посредник со своей накруткой.
+                                                    Производственная компания “Стильные Системы” - это московский производитель, а
+                                                    не посредник со своей накруткой</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                        </div>
+                    </div>
                 </div>
+                <img class="review__bg" src="./assets/images/review/bg.webp" alt="windows">
+            </section>
+            
+            <div class="katalog">
+                <div class="katalog__inner container">
+                    <h2 class="project__title katalog__inner__title h-reset"
+                        style="background-image: url(./assets/images/katalog/title.svg);">КАТАЛОГ ПРОДУКЦии</h2>
+                    <div class="katalog__inner__wrapper">
+            
+                        <div class="katalog__inner__wrapper__item">
+                            <div class="katalog__inner__wrapper__item__img">
+                                <img src="./assets/images/katalog/Frame3.webp" alt="windows">
+                            </div>
+                            <div class="katalog__inner__wrapper__item__data">
+                                <h4 class="h-reset">Мягкие окна</h4>
+                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
+                                    террасы от дождя, ветра, пыли и насекомых</p>
+                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="katalog__inner__wrapper__item">
+                            <div class="katalog__inner__wrapper__item__img">
+                                <img src="./assets/images/katalog/Frame1.webp" alt="windows">
+                            </div>
+                            <div class="katalog__inner__wrapper__item__data">
+                                <h4 class="h-reset">Мягкие окна тонированные</h4>
+                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
+                                    террасы от дождя, ветра, пыли и насекомых</p>
+                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="katalog__inner__wrapper__item">
+                            <div class="katalog__inner__wrapper__item__img">
+                                <img src="./assets/images/katalog/Frame2.webp" alt="windows">
+                            </div>
+                            <div class="katalog__inner__wrapper__item__data">
+                                <h4 class="h-reset">Автоматические мягкие окна</h4>
+                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
+                                    террасы от дождя, ветра, пыли и насекомых</p>
+                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="katalog__inner__wrapper__item">
+                            <div class="katalog__inner__wrapper__item__img">
+                                <img src="./assets/images/katalog/Frame4.webp" alt="windows">
+                            </div>
+                            <div class="katalog__inner__wrapper__item__data">
+                                <h4 class="h-reset">Мягкие окна</h4>
+                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
+                                    террасы от дождя, ветра, пыли и насекомых</p>
+                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="katalog__inner__wrapper__item">
+                            <div class="katalog__inner__wrapper__item__img">
+                                <img src="./assets/images/katalog/Frame5.webp" alt="windows">
+                            </div>
+                            <div class="katalog__inner__wrapper__item__data">
+                                <h4 class="h-reset">Мягкие окна тонированные</h4>
+                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
+                                    террасы от дождя, ветра, пыли и насекомых</p>
+                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="katalog__inner__wrapper__item">
+                            <div class="katalog__inner__wrapper__item__img">
+                                <img src="./assets/images/katalog/Frame6.webp" alt="windows">
+                            </div>
+                            <div class="katalog__inner__wrapper__item__data">
+                                <h4 class="h-reset">Автоматические мягкие окна</h4>
+                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
+                                    террасы от дождя, ветра, пыли и насекомых</p>
+                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">Подробнее</a>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <a href="" class="katalog__inner__link project__link">Оставить заявку</a>
+                    <!-- <button class="katalog__inner__link project__link">ВЫЗВАТЬ ЗАМЕРЩИКА</button> -->
+                </div>
+                <img class="katalog__img" src="./assets/images/katalog/bg.webp" alt="windows" width="1880" height="1730">
             </div>
             
-            <div class="about">
+            
+            <section class="order"> 
+                <div class="container">
+                    <div class="order__inner">
+                        <dl class="h-reset order__inner__item reverse">
+                            <dt>(1)</dt>
+                            <dd class="h-reset">порядок</dd>
+                        </dl>
+                        <dl class="h-reset order__inner__item ">
+                            <dt>(2)</dt>
+                            <dd class="h-reset">оформления</dd>
+                        </dl>
+                        <dl class="h-reset order__inner__item reverse">
+                            <dt>(3)</dt>
+                            <dd class="h-reset">заказа</dd>
+                        </dl>
+                    </div>
+                    <ul class="order__bottom list-reset">
+                        <li>
+                            <div class="order__bottom__item">
+                                <dl class="h-reset">
+                                    <dt>1</dt>
+                                    <dd class="h-reset"><strong>заявка</strong>Оставьте заявку Вам 
+                                        перезвонят и проконсультируют</dd>
+                                </dl>
+                            </div>
+                            <div class="order__bottom__item">
+                                <img src="./assets/images/order/Frame1.png" alt="order" width="590" height="160">
+                            </div>
+                        </li>
+                        <li class="reverse">
+                            <div class="order__bottom__item">
+                                <dl class="h-reset">
+                                    <dt>2</dt>
+                                    <dd class="h-reset"><strong>выезд</strong>Специалист выезжает, чтобы сделать замеры и составить смету</dd>
+                                </dl>
+                            </div>
+                            <div class="order__bottom__item">
+                                <img src="./assets/images/order/Frame2.png" alt="order" width="590" height="160">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="order__bottom__item">
+                                <dl class="h-reset">
+                                    <dt>3</dt>
+                                    <dd class="h-reset"><strong>договор</strong>Заключение договора <br>
+                                        Внесение предоплаты 50%</dd>
+                                </dl>
+                            </div>
+                            <div class="order__bottom__item">
+                                <img src="./assets/images/order/Frame1.png" alt="order" width="590" height="160">
+                            </div>
+                        </li>
+                        <li class="reverse">
+                            <div class="order__bottom__item">
+                                <dl class="h-reset">
+                                    <dt>4</dt>
+                                    <dd class="h-reset"><strong>доставка</strong>Доставка <br>
+                                        Монтаж и гарантия</dd>
+                                </dl>
+                            </div>
+                            <div class="order__bottom__item">
+                                <img src="./assets/images/order/Frame4.png" alt="order" width="590" height="160">
+                            </div>
+                        </li>
+                    </ul>  
+                </div>
+            </section>
+            
+            
+            
+            <section class="about">
                 <div class="container about__inner">
+                    <h2 class="h-reset about__inner__title"><b>“СТИЛЬНЫЕ СИСТЕмы”</b> всегда заботится о качестве
+                        установки и производства окон</h2>
                     <div class="about__inner__item">
-                        <h2 class="h-reset about__inner__item__title"><b>“СТИЛЬНЫЕ СИСТЕмы”</b> всегда заботится о качестве
-                            установки и производства окон</h2>
                         <style>
                             .embed-container {
                                 position: relative;
                                 padding-bottom: 56.25%;
-                                height: 0;
+                                /* height: 0; */
+                                height: 100%;
                                 overflow: hidden;
                                 max-width: 100%;
                             }
@@ -152,92 +356,52 @@
                         </style>
                         <div class='embed-container'>
                             <iframe src='https://www.youtube.com/embed/krDWc30PAGg' frameborder='0' allowfullscreen
-                                loading="lazy"></iframe>
+                            loading="lazy"></iframe>
+                        </div>
+                        <div class="about__inner__item__left">
+                            <h3>О компании</h3>
+                            <strong>Производственная компания “Стильные Системы” - это московский производитель, а не посредник со своей накруткой</strong>
+                            <p>Заказывая продукцию у нас вы всегда получите профессиональное отношение и максимальное внимание! Мы будем всегда на связи и учтем все ваши пожелания! Мы гарантируем изготовление продукции, доставку на объект и монтаж окон в оговоренный срок!</p>
+                            <p>После того, как вы оставите нам заявку мы гарантируем вам оптимальное решение для вашей задачи! Мы подберем лучшие материалы и фурнитуру, приедем, сделаем замеры и проконсультируем</p>
+                            <button class="about__inner__link project__link">Оставить заявку</button>
+                            <!-- <a href="" class="about__inner__link">ОСТАВИТЬ ЗАЯВКу</a> -->
                         </div>
                     </div>
-                    <h3>О компании</h3>
-                    <p>Производственная компания <b>“Стильные Системы”</b> - это <b>московский производитель,</b> а не посредник со
-                        своей накруткой</p>
-                    <p>Расположившись на первом этаже производственного здания, компания может гарантировать <b>выполнение заказов в
-                            срок,</b> а также технологический контроль, через который проходит каждый выполненный заказ</p>
-                    <p>Заказывая продукцию у нас вы всегда получите профессиональное отношение и максимальное внимание! Мы будем
-                        всегда на связи и учтем все ваши пожелания! Мы гарантируем изготовление продукции, доставку на объект и
-                        монтаж окон <b>в оговоренный срок!</b></p>
-                    <p>После того, как вы оставите нам заявку мы гарантируем вам <b>оптимальное решение для вашей задачи!</b> Мы
-                        подберем лучшие материалы и фурнитуру, приедем, сделаем замеры и проконсультируем</p>
-                    <button class="about__inner__link project__link">ОСТАВИТЬ ЗАЯВКу</button>
-                    <!-- <a href="" class="about__inner__link">ОСТАВИТЬ ЗАЯВКу</a> -->
+                  
                 </div>
-            </div>
+                <img class="about__bg" src="./assets/images/about/bg.png" alt="windows" width="954" height="878">
+            </section>
             
-            <div class="katalog">
-                <div class="katalog__inner container">
-                    <h2 class="project__title katalog__inner__title h-reset">КАТАЛОГ ПРОДУКЦии</h2>
-                    <div class="katalog__inner__wrapper">
-            
-                        <div class="katalog__inner__wrapper__item">
-                            <div class="katalog__inner__wrapper__item__img">
-                                <img src="./assets/images/katalog/Rectangle16.webp" alt="windows">
-                            </div>
-                            <div class="katalog__inner__wrapper__item__data">
-                                <h4 class="h-reset">Мягкие окна</h4>
-                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
-                                    террасы от дождя, ветра, пыли и насекомых</p>
-                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="katalog__inner__wrapper__item">
-                            <div class="katalog__inner__wrapper__item__img">
-                                <img src="./assets/images/katalog/Rectangle17.webp" alt="windows">
-                            </div>
-                            <div class="katalog__inner__wrapper__item__data">
-                                <h4 class="h-reset">Мягкие окна тонированные</h4>
-                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
-                                    террасы от дождя, ветра, пыли и насекомых</p>
-                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-                        <div class="katalog__inner__wrapper__item">
-                            <div class="katalog__inner__wrapper__item__img">
-                                <img src="./assets/images/katalog/Rectangle18.webp" alt="windows">
-                            </div>
-                            <div class="katalog__inner__wrapper__item__data">
-                                <h4 class="h-reset">Автоматические мягкие окна</h4>
-                                <p>Мягкие окна - это уникальный продукт, который отлично подходит для защиты веранды, беседки или
-                                    террасы от дождя, ветра, пыли и насекомых</p>
-                                <a href="" class="katalog__inner__wrapper__item__data__link project__link">ПОДРОБНЕЕ</a>
-                            </div>
-                        </div>
-            
+            <section class="benefits">
+                <div class="benefits__inner container">
+                    <p class="benefits__inner__numbers">В цифрах</p>
+                    <div class="benefits__inner__top">
+                        <h2 class="h-reset">
+                            <small>Торгово-промышленное предприятие</small><strong> “Стильные системы”</strong>
+                        </h2>
+                        <img src="./assets/images/hero/logo.svg" alt="logo" width="200" height="56">
                     </div>
-                    <a href="" class="katalog__inner__link project__link">ВЫЗВАТЬ ЗАМЕРЩИКА</a>
-                    <!-- <button class="katalog__inner__link project__link">ВЫЗВАТЬ ЗАМЕРЩИКА</button> -->
-                </div>
-            </div>
-            
-            <section class="order">
-                <div class="container">
-                    <h2 class="order__title project__title h-reset">ПОРЯДОК ОФОРМЛЕНИЯ ЗАКАза</h2>
-                    <div class="order__inner">
-                        <dl class="order__inner__item h-reset">
-                            <dt>1</dt>
-                            <dd class="h-reset"><strong>Оставьте заявку</strong>Вам перезвонят и проконсультируют</dd>
+                    <div class="benefits__inner__bottom">
+                        <dl class="benefits__inner__item h-reset">
+                            <dd class="h-reset">>15</dd>
+                            <dt>выполненных заказов в срок</dt>
                         </dl>
-                        <dl class="order__inner__item h-reset">
-                            <dt>2</dt>
-                            <dd class="h-reset"><strong>Выезд специалиста</strong>Сделает замеры и составит смету</dd>
+                        <dl class="benefits__inner__item h-reset">
+                            <dd class="h-reset">>10</dd>
+                            <dt>лет- срок службы наших окон</dt>
                         </dl>
-                        <dl class="order__inner__item h-reset">
-                            <dt>3</dt>
-                            <dd class="h-reset"><strong>Заключение договора</strong>Внесение предоплаты 50%</dd>
+                        <dl class="benefits__inner__item h-reset">
+                            <dd class="h-reset">2</dd>
+                            <dt>года гарантии для клиентов</dt>
                         </dl>
-                        <dl class="order__inner__item h-reset">
-                            <dt>4</dt>
-                            <dd class="h-reset"><strong>Доставка</strong>Монтаж и гарантия</dd>
+                        <dl class="benefits__inner__item h-reset">
+                            <dd class="h-reset">100%</dd>
+                            <dt>безопасности: наши окна не бьются</dt>
                         </dl>
                     </div>
                 </div>
             </section>
+            
             
             <section class="trust">
                 <div class="container">
@@ -245,25 +409,6 @@
                     <p class="trust__subtitle h-reset">Посмотрите, что говорят клиенты о нашей работе</p>
                     <ul class="trust__inner list-reset">
                         <li>
-                            <style>
-                                .embed-container {
-                                    position: relative;
-                                    padding-bottom: 56.25%;
-                                    height: 0;
-                                    overflow: hidden;
-                                    max-width: 100%;
-                                }
-            
-                                .embed-container iframe,
-                                .embed-container object,
-                                .embed-container embed {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                }
-                            </style>
                             <div class='embed-container'>
                                 <iframe src='https://www.youtube.com/embed/krDWc30PAGg' frameborder='0' allowfullscreen
                                     loading="lazy"></iframe>

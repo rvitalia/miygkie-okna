@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".accordion-item").forEach(e=>{e.querySelector(".accordion-header").addEventListener("click",function(){e.classList.toggle("active")})})});
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".accordion-item").forEach(e=>{e.querySelector(".accordion-header").addEventListener("click",function(){e.classList.toggle("active")})})}),new Swiper(".swiper",{loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});

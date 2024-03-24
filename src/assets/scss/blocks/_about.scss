@@ -1,69 +1,87 @@
 .about {
-    padding-top: 90px;
+    padding-top: 220px;
     color: black;
+    padding-bottom: 120px;
+    position: relative;
 }
 
 .about__inner {
 
-    &>h3 {
-        font-family: "Georgia", sans-serif;
-        font-weight: 700;
-        line-height: 1.2;
-        font-size: 36px;
+    & h3 {
         margin: 0;
+        color: rgb(44, 53, 88);
+        font-family: var(--third-family);
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0%;
+        text-align: left;
+        margin-bottom: 30px;
     }
 
-    &>p {
+    & strong {
+        color: rgb(44, 53, 88);
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 26px;
+        letter-spacing: -2%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        color: rgb(0, 0, 0);
+        font-size: 19px;
         font-weight: 400;
-        font-family: "Georgia", sans-serif;
-        font-size: 24px;
+        line-height: 160%;
+        letter-spacing: -2%;
+        text-align: left;
     }
 }
 
 .about__inner__item {
     width: 100%;
-    max-width: 540px;
-    float: left;
-    margin-right: 38px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 30px
 }
 
-.about__inner__item__title {
-    color: #1f4ae2;
-    font-size: 24px;
-    font-weight: 400;
-    max-width: 510px;
-    line-height: 1;
-    margin-bottom: 51px;
+.about__inner__title {
+    font-family: var(--third-family);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 36px;
+    margin-bottom: 60px;
 
     & b {
-        text-transform: uppercase;
-        font-weight: 700;
-        font-style: italic;
-        font-size: 36px;
+        color: rgb(31, 74, 226);
     }
 }
 
 .about__inner__link {
     display: block;
-    margin: 0 auto;
     border: 1px solid #fff;
     color: white;
-    width: 100%;
-    max-width: 317px;
-    text-align: center;
-    padding: 21px 0;
+    padding: 17px 30px;
     box-shadow: 4px 4px 50px 0 rgba(66, 66, 66, 0.25);
     background: #1f4ae2;
-    font-family: "Georgia", sans-serif;
-    font-weight: 700;
     font-size: 20px;
-    text-transform: uppercase;
     transition: all 0.3s linear;
 
-    &:hover{
+    &:hover {
         color: #1f4ae2;
         background: white;
         border-color: #1f4ae2;
         cursor: pointer;
     }
+}
+
+.about__bg {
+    position: absolute;
+    left: 60%;
+    top: 100px;
+    z-index: -1;
 }
