@@ -1,65 +1,73 @@
 *,
 *::before,
-*::after{
-    box-sizing: border-box;
+*::after {
+  box-sizing: border-box;
 }
+
 img {
-    height: auto;
-    max-width: 100%;
-    object-fit: cover;
-  }
+  height: auto;
+  max-width: 100%;
+  object-fit: cover;
+}
+
 a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .btn-reset {
-    border: none;
-    padding: 0;
-    background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.project__title {
+  font-weight: 700;
+  font-size: 36px;
+  color: #1f4ae2;
+  text-transform: uppercase;
+}
+
+.project__link {
+  border-radius: 5px;
+  padding: 17px 0;
+
+  display: block;
+   border: 1px solid transparent;
+  color: white;
+  width: 100%;
+  text-align: center;
+  max-width: 256px; 
+  font-size: 20px;
+  line-height: 140%;
+  color: #f9faff;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  white-space: nowrap;
+
+/* Style */
+background: rgb(31, 74, 226);
+
+  &:hover {
+    color: #1f4ae2;
+    background: white;
+    border-color: #1f4ae2;
     cursor: pointer;
   }
-  .list-reset {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .project__title {
-    font-weight: 700;
-    font-size: 36px;
-    color: #1f4ae2;
-    text-transform: uppercase;
-  }
+}
 
-  .project__link{
-    display: block;
-    margin: 0 auto;
-    border: 1px solid #fff;
-    color: white;
-    width: 100%;
-    max-width: 540px;
-    text-align: center;
-    padding: 21px 0;
-    box-shadow: 4px 4px 50px 0 rgba(66, 66, 66, 0.25);
-    background: #1f4ae2;
-    font-family: "Georgia", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
-    text-transform: uppercase;
-    transition: all 0.3s linear;
+.h-reset {
+  margin: 0;
+}
 
-    &:hover{
-        color: #1f4ae2;
-        background: white;
-        border-color: #1f4ae2;
-        cursor: pointer;
-    }
-  }
-
-  .h-reset{
-    margin: 0;
-  }
-
-  .flex{
-    display: flex;
-    align-items: center;
-  }
+.flex {
+  display: flex;
+  align-items: center;
+}

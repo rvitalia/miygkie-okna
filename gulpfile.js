@@ -232,7 +232,7 @@ function jsWatch(cb) {
 function images(cb) {
     return src(path.src.imagesnosvg)
         .pipe(newer(path.build.images))
-        .pipe(avif({ quality: 50 }))
+        .pipe(avif({ quality: 80 }))
         
         .pipe(src(path.src.images))
         .pipe(newer(path.build.images))
@@ -243,7 +243,7 @@ function images(cb) {
         .pipe(imagemin({
             interlaced: true,
             progressive: true,
-            optimizationLevel: 5,
+            optimizationLevel: 2,
             svgoPlugins: [
                 {
                     removeViewBox: true

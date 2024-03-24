@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     
     <!-- Useful meta tags -->
@@ -14,50 +15,90 @@
     <meta name="robots" content="index, follow">
     <meta name="google" content="notranslate">
     <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <title>Документ</title>
+    <!-- <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon"> -->
+    <title>Мягкие окна</title>
     
     
 </head>
 
 <body>
     <div class="page">
-
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="" class="header__inner__logo">
+                        <img src="./assets/images/hero/logo.svg" alt="logo" width="200" height="56">
+                    </a>
+                    <div class="header__inner__geo">
+                        <img src="./assets/images/hero/geo.svg" alt="geo" width="44" height="44">
+                        <span>Работаем по Москве и Московской области</span>
+                        <span>Поселок Фабрики 1 мая, микрорайон Гора 33 к.1</span>
+                    </div>
+                    <a href="" class="header__inner__whatsapp">
+                        <img src="./assets/images/hero/logos_whatsapp-icon.svg" alt="whatsapp" width="44" height="44">
+                        <span>8-495-165-70-89</span>
+                        <span>Пишите в WhatsApp</span>
+                    </a>
+                    <a href="" class="header__inner__call">
+                        <img src="./assets/images/hero/Group 36.svg" alt="tel" width="44" height="44">
+                        <span>8-985-123-00-89</span>
+                        <span>Звоните! Мы на связи!</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom --main">
+                <div class="container">
+                    <ul class="header__bottom__menu list-reset">
+                        <li>Каталог</li>
+                        <li>Наши проекты</li>
+                        <li>Цены</li>
+                        <li>Онлайн - оплата</li>
+                        <li>Калькулятор</li>
+                        <li>Контакты</li>
+                        <li>Акция</li>
+                        <li>Полезная информация</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <main class="main">
             
             
-            <div class="hero" style="background-image: url(./assets/images/hero/Rectangle1.png);">
+            <div class="hero" style="background-image: url(./assets/images/hero/Rectangle43.png);">
                 <div class="container hero__inner">
                     <div class="hero__inner__item">
-                        <h1 class="hero__inner__item__title h-reset">МЯГКИЕ ОКНа</h1>
-                        <h2 class="hero__inner__item__subtitle h-reset">Производим и устанавливаем профессионально уже более 15 лет
-                        </h2>
-                        <p class="hero__inner__item__discount">Также мы сделаем вам скидку 5 % если у конкурентов дешевле</p>
+                        <span class="hero__inner__item__work"
+                            style="background-image: url(./assets/images/hero/Geo-cenetr.svg);">Работаем по Москве и Московской
+                            области</span>
+                        <h1 class="hero__inner__item__title h-reset">МЯГКИЕ <br> ОКНа</h1>
+                        <dl class="hero__inner__item__desc h-reset">
+                            <dt>>15лет</dt>
+                            <dd class="h-reset">Производим и устанавливаем окна профессионально </dd>
+                        </dl>
                         <div class="hero__inner__item__awards">
-                            <h3 class="h-reset">STAR AWARDS - 2021</h3>
-                            <p class="h-reset"><small>в номинации </small>“ДИЗАЙН&КОМФОРТ”</p>
-                            <img src="./assets/images/hero/kn579061.webp" alt="awards" width="88" height="93">
-                            <p class="h-reset --second">ЗВЕЗДНЫЕ ОТЗЫВЫ</p>
-                            <a href=""><img src="./assets/images/hero/Arrow1.svg" alt="arrow" width="157" height="1"></a>
+                            <span>В номинации «ДИЗАЙН & КОМФОРТ»</span>
+                            <h3 class="h-reset">STAR AWARDS 2021</h3>
+                            <a class="h-reset project__link">Посмотреть отзывы</a>
+                            <img src="./assets/images/hero/kn579061.webp" alt="awards" width="131" height="173">
                         </div>
                     </div>
                     <div class="hero__inner__item">
                         <div class="hero__inner__item__form">
-                            <h3 class="h-reset hero__inner__item__form__title">Оставьте ваши контактные данные и мы свяжемся с вами
-                                в ближайшее время!</h3>
+                            <div class="h-reset hero__inner__item__form__title" style="background-image: url(./assets/images/hero/Tel.svg);"><span>давайте</span> <strong>свяжемся</strong></div>
                             <form action="">
-                                <label for="name">Имя
-                                    <input type="text" name="" id="name">
-                                </label>
-                                <label for="tel">Телефон
-                                    <input type="tel" name="" id="tel">
-                                </label>
+                                <input type="text" name="" id="name" placeholder="Имя">
+                                <input type="tel" name="" id="tel" placeholder="Телефон">
                                 <div class="form__flex">
-                                    <a href="" class="hero__inner__item__form__button --white">КАЛЬКУЛЯТОР</a>
-                                    <input type="submit" class="hero__inner__item__form__button --blue" value="ЗАКАЗАТЬ ЗВОНОК">
+                                    <input type="submit" class="hero__inner__item__form__button project__link" value="Заказать звонок">
+                                    <a href="" class="hero__inner__item__form__button --white">Калькулятор</a>
                                 </div>
-            
                             </form>
+                            <div class="hero__inner__item__form__gift" style="background-image: url(./assets/images/hero/gift.svg);">
+                                <dl class="h-reset">
+                                    <dd>5%</dd>
+                                    <dt>Скидка для тех, кто найдёт конкурента, у которого дешевле</dt>
+                                </dl>
+                            </div>
                         </div>
                     </div>
                 </div>
