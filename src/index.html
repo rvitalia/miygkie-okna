@@ -444,15 +444,32 @@ title: Мягкие окна
         </ul>
     </div>
     <div class="ourcontacts__map">
-        <div style="position:relative;overflow:hidden;"><a
-            href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
-            style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
-            href="https://yandex.ru/maps/213/moscow/house/mikrorayon_gora_33k1/Z04YcwdpQUcPQFtvfXh5dH1lbA==/?ll=37.519828%2C55.485168&utm_medium=mapframe&utm_source=maps&z=14"
-            style="color:#eee;font-size:12px;position:absolute;top:14px;">Микрорайон Гора, 33к1 на карте
-            Москвы — Яндекс Карты</a><iframe
-            src="https://yandex.ru/map-widget/v1/?ll=37.509415%2C55.485435&mode=whatshere&whatshere%5Bpoint%5D=37.509828%2C55.485168&whatshere%5Bzoom%5D=17&z=14"
-            width="100%" height="700" frameborder="1" allowfullscreen="true"
-            style="position:relative;"></iframe></div>
+        <div id="map"></div>
     </div>
 </section>
 
+<script>
+      document.addEventListener('DOMContentLoaded', function () {
+        ymaps.ready(init);
+
+        function init() {
+            var myMap = new ymaps.Map('map', {
+                center: [55.485112, 37.500935],
+                zoom: 16
+            }, {
+                searchControlProvider: 'yandex#search'
+            });
+
+            var myPlacemark = new ymaps.Placemark([55.485167, 37.509792], {
+                balloonContent: '<div class="company-info">' +
+                    '<a target="_blank" href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps">Москва</a><br>' +
+                    '<a target="_blank" href="https://yandex.ru/maps/213/moscow/house/mikrorayon_gora_33k1/Z04YcwdpQUcPQFtvfXh5dH1lbA==/?from=mapframe&ll=37.508840%2C55.485311&utm_medium=mapframe&utm_source=maps&z=19">Микрорайон Гора, 33к1 — Яндекс Карты</a>' +
+                    '</div>'
+            }, {
+                preset: 'islands#redDotIcon'
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+});
+</script>
