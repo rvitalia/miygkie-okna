@@ -1,7 +1,7 @@
 .katalog {
-    padding-top: 120px;
+    padding-top: clamp(60px, 10vw, 120px);
     position: relative;
-    padding-bottom: 120px;
+    padding-bottom: clamp(60px, 10vw, 120px);
 }
 
 .katalog__inner {}
@@ -9,13 +9,13 @@
 
 .katalog__inner__title {
     padding-left: 80px;
-    font-size: 60px;
     font-family: var(--third-family);
     font-weight: 700;
     line-height: 110%;
     color: rgb(44, 53, 88);
     background-repeat: no-repeat;
     background-position: left 100%;
+    background-size: contain;
 }
 
 .katalog__inner__wrapper {
@@ -28,6 +28,9 @@
 }
 
 .katalog__inner__wrapper__item {
+    @include tablet{
+        max-width: 410px;
+    }
     // position: relative;
 }
 
@@ -45,10 +48,15 @@ top: -90px;
     margin: 0 auto;
     padding: 25px 30px 25px 30px;
 
+    @include mobile{
+        padding: 10px;
+        top: -60px;
+    }
+
     & h4 {
         color: rgb(0, 0, 0);
         font-family: var(--third-family);
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 700;
         line-height: 110%;
         letter-spacing: 0%;
@@ -58,11 +66,15 @@ top: -90px;
 
     & p {
         color: rgb(0, 0, 0);
-        font-size: 19px;
+        font-size: 17px;
         line-height: 160%;
         letter-spacing: -2%;
         text-align: left;
         margin-bottom: 25px;
+
+        @include mobile{
+            font-size: 14px;
+        }
     }
 
 }

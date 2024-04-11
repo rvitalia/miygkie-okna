@@ -1,22 +1,22 @@
 .faq {
     padding-top: 80px;
     color: black;
-    padding-bottom: 120px;
+    padding-bottom: clamp(30px, 7vw,120px);
     position: relative;
 }
 
 .faq__title {
     font-family: var(--third-family);
-    font-size: 60px;
+    font-size: clamp(30px, 7.5vw, 60px);
     font-weight: 700;
     line-height: 110%;
     letter-spacing: 0%;
     text-align: left;
-    padding-left: 82px;
+    padding-left: clamp(45px, 7.5vw, 82px);
     background-position: left center;
     background-repeat: no-repeat;
     background-size: contain;
-    margin-bottom: 90px;
+    margin-bottom: clamp(40px, 7vw, 90px);
 
     & strong{
         color: rgb(44, 53, 88);
@@ -53,6 +53,8 @@
     justify-content: space-between;
     padding: 24px 10px;
     cursor: pointer;
+
+    font-size: clamp(15px,3vw, 19px);
 }
 
 .accordion-icon {
@@ -81,7 +83,7 @@
 
 .accordion-content {
     padding: 10px;
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 20px);
 }
 
 .accordion-item.active {

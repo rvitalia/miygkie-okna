@@ -49,6 +49,9 @@
                         <span>8-985-123-00-89</span>
                         <span>Звоните! Мы на связи!</span>
                     </a>
+                    <button class="header__inner__burger btn-reset">
+                        <img src="./assets/images/burger.svg" alt="burger" width="35" height="22">
+                    </button>
                 </div>
             </div>
             <div class="header__bottom --main">
@@ -63,6 +66,23 @@
                         <li><a href="">Акция</a></li>
                         <li><a href="">Полезная информация</a></li>
                     </ul>
+                    <div class="header__bottom__mobile">
+                        <div class="header__inner__geo --mobile">
+                            <img src="./assets/images/hero/geo.svg" alt="geo" width="44" height="44">
+                            <span>Работаем по Москве и Московской области</span>
+                            <span>Поселок Фабрики 1 мая, микрорайон Гора 33 к.1</span>
+                        </div>
+                        <a href="" class="header__inner__whatsapp --mobile">
+                            <img src="./assets/images/hero/logos_whatsapp-icon.svg" alt="whatsapp" width="44" height="44">
+                            <span>8-495-165-70-89</span>
+                            <span>Пишите в WhatsApp</span>
+                        </a>
+                        <a href="" class="header__inner__call --mobile">
+                            <img src="./assets/images/hero/Group 36.svg" alt="tel" width="44" height="44">
+                            <span>8-985-123-00-89</span>
+                            <span>Звоните! Мы на связи!</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -75,7 +95,7 @@
                         <span class="hero__inner__item__work"
                             style="background-image: url(./assets/images/hero/Geo-cenetr.svg);">Работаем по Москве и Московской
                             области</span>
-                        <h1 class="hero__inner__item__title h-reset">МЯГКИЕ <br> ОКНа</h1>
+                        <h1 class="hero__inner__item__title h-reset">Мягкие окна</h1>
                         <dl class="hero__inner__item__desc h-reset">
                             <dt>>15лет</dt>
                             <dd class="h-reset">Производим и устанавливаем окна профессионально </dd>
@@ -89,8 +109,8 @@
                     </div>
                     <div class="hero__inner__item">
                         <div class="hero__inner__item__form">
-                            <div class="h-reset hero__inner__item__form__title"
-                                style="background-image: url(./assets/images/hero/Tel.svg);"><span>давайте</span>
+                            <!-- style="background-image: url(./assets/images/hero/Tel.svg);" -->
+                            <div class="h-reset hero__inner__item__form__title"><span>Давайте</span>
                                 <strong>свяжемся</strong>
                             </div>
                             <form action="">
@@ -115,11 +135,10 @@
             </div>
             
             
-            <section class="review">
+            <!-- <section class="review">
                 <div class="container">
                     <h2 class="review__title" style="background-image: url(./assets/images/review/Vector.png);">отзывы</h2>
                     <div class="review__inner">
-                        <!-- Slider main container -->
                         <div class="swiper__review__buttons">
                             <div class="swiper-button-prev"><img src="./assets/images/review/Arrow-left.svg" alt="left" width="46"
                                     height="22"></div>
@@ -127,9 +146,7 @@
                                     height="22"></div>
                         </div>
                         <div class="swiper swiper__review">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
                                 <div class="swiper-slide">
                                     <div class="review__inner__slide">
                                         <div class="review__inner__data">
@@ -174,17 +191,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- If we need navigation buttons -->
                         </div>
                     </div>
                 </div>
                 <img class="review__bg" src="./assets/images/review/bg.webp" alt="windows">
-            </section>
+            </section> -->
             
             <div class="katalog">
                 <div class="katalog__inner container">
                     <h2 class="project__title katalog__inner__title h-reset"
-                        style="background-image: url(./assets/images/katalog/title.svg);">КАТАЛОГ ПРОДУКЦии</h2>
+                        style="background-image: url(./assets/images/katalog/title.svg);">Каталог продукции</h2>
                     <div class="katalog__inner__wrapper">
             
                         <div class="katalog__inner__wrapper__item">
@@ -264,7 +280,9 @@
             
             <section class="order">
                 <div class="container">
-                    <div class="order__inner">
+                    <h2 class="project__title h-reset"
+                        style="margin-bottom: clamp(30px, 10vw, 70px); color: black;">Порядок оформления заказа</h2>
+                    <!-- <div class="order__inner">
                         <dl class="h-reset order__inner__item reverse">
                             <dt>(1)</dt>
                             <dd class="h-reset">порядок</dd>
@@ -277,7 +295,7 @@
                             <dt>(3)</dt>
                             <dd class="h-reset">заказа</dd>
                         </dl>
-                    </div>
+                    </div> -->
                     <ul class="order__bottom list-reset">
                         <li>
                             <div class="order__bottom__item">
@@ -335,7 +353,7 @@
             
             <section class="about">
                 <div class="container about__inner">
-                    <h2 class="h-reset about__inner__title"><b>“СТИЛЬНЫЕ СИСТЕмы”</b> всегда заботится о качестве
+                    <h2 class="h-reset about__inner__title"><b>“Стильные системы”</b> всегда заботится о качестве
                         установки и производства окон</h2>
                     <div class="about__inner__item">
                         <style>
@@ -518,12 +536,22 @@
                     ymaps.ready(init);
             
                     function init() {
-                        var myMap = new ymaps.Map('map', {
-                            center: [55.485112, 37.500935],
-                            zoom: 16
-                        }, {
-                            searchControlProvider: 'yandex#search'
-                        });
+            
+                        if(window.innerWidth < 768){
+                            var myMap = new ymaps.Map('map', {
+                                center: [55.485167, 37.509792],
+                                zoom: 16
+                            }, {
+                                searchControlProvider: 'yandex#search'
+                            });
+                        } else{
+                            var myMap = new ymaps.Map('map', {
+                                center: [55.485112, 37.500935],
+                                zoom: 16
+                            }, {
+                                searchControlProvider: 'yandex#search'
+                            });
+                        }
             
                         var myPlacemark = new ymaps.Placemark([55.485167, 37.509792], {
                             balloonContent: '<div class="company-info">' +

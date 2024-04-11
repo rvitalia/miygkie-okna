@@ -17,27 +17,49 @@
     top: 120px;
     z-index: 10;
 
+    @include small-tablet{
+        padding: 10px 25px;
+    }
+
     & h2 {
         display: flex;
         align-items: center;
         color: rgb(44, 53, 88);
         font-family: var(--third-family);
-        font-size: 60px;
+        font-size: 50px;
         font-weight: 700;
         line-height: 110%;
         letter-spacing: 0%;
         justify-content: center;
         margin-bottom: 30px;
 
+        @include small-tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include mobile{
+            font-size: 34px;
+        }
+
         & strong {
             display: block;
-            width: 32px;
-            height: 32px;
+            width: 28px;
+            height: 28px;
             @include bg-cover;
-            margin-right: 32px;
-            margin-left: 32px;
+            margin-right: 28px;
+            margin-left: 28px;
             position: relative;
             top: 8px;
+            min-width: 28px;
+
+            @include mobile{
+                min-width: auto;
+                top: unset;
+                width: 23px;
+                height: 23px;
+                background-size: contain;
+            }
         }
     }
 }
@@ -49,8 +71,25 @@
     gap: 20px;
     margin-bottom: 30px;
 
+    @include small-tablet{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        
+        
+        @include mobile{
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        }
+     }
+
     & input {
         flex: 1 0 220px;
+    }
+    
+}
+
+.contact__inner__form input[type='submit']{
+    @include small-tablet{
+        grid-column: 1/3;
     }
 }
 
@@ -59,7 +98,7 @@
     border-radius: 5px;
     padding: 15px;
     border: none;
-    max-width: 220px;
+    // max-width: 260px;
     backdrop-filter: blur(20px);
     background: rgba(249, 250, 255, 0.3);
     color: rgb(44, 53, 88);
@@ -68,9 +107,15 @@
     line-height: 26px;
     letter-spacing: -2%;
     text-align: left;
+
+    @include mobile{
+        padding: 10px;
+        font-size: 14px;
+        line-height: normal;
+    }
 }
 
-.contact__inner__gift{
+.contact__inner__gift {
     border-radius: 5px;
     backdrop-filter: blur(20px);
     background: rgba(249, 250, 255, 0.5);

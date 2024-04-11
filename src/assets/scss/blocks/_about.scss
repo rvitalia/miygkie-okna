@@ -1,7 +1,7 @@
 .about {
-    padding-top: 220px;
+    padding-top: clamp(30px, 10vw, 100px);
     color: black;
-    padding-bottom: 120px;
+    padding-bottom: clamp(30px, 10vw, 100px);
     position: relative;
 }
 
@@ -11,12 +11,17 @@
         margin: 0;
         color: rgb(44, 53, 88);
         font-family: var(--third-family);
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 700;
         line-height: 110%;
         letter-spacing: 0%;
         text-align: left;
         margin-bottom: 30px;
+
+        @include mobile{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
     }
 
     & strong {
@@ -27,6 +32,10 @@
         letter-spacing: -2%;
         text-align: left;
         margin-bottom: 20px;
+
+        @include mobile{
+            font-size: 17px;
+        }
     }
 
     & p {
@@ -36,6 +45,10 @@
         line-height: 160%;
         letter-spacing: -2%;
         text-align: left;
+
+        @include mobile{
+            font-size: 15px;
+        }
     }
 }
 
@@ -43,12 +56,17 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 30px
+    gap: 30px;
+    
+    @include mobile{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
 }
 
 .about__inner__title {
     font-family: var(--third-family);
-    font-size: 50px;
+    font-size: clamp(28px, 6vw, 45px);
     font-weight: 700;
     line-height: 110%;
     letter-spacing: 0%;
@@ -58,6 +76,10 @@
 
     & b {
         color: rgb(31, 74, 226);
+    }
+     
+    @include mobile{
+        padding-left: 0;
     }
 }
 

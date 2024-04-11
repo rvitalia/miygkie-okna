@@ -30,9 +30,9 @@ a {
 
 .project__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: clamp(30px, 5vw, 45px);
   color: #1f4ae2;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .project__link {
@@ -41,16 +41,16 @@ a {
 font-size: clamp(12px,4vw,16px);
   display: block;
    border: 1px solid transparent;
-  // color: white;
-  // width: 100%;
   text-align: center;
-  // max-width: 256px; 
-  // font-size: 20px;
   line-height: 140%;
   color: #f9faff;
-  // font-weight: 700;
   transition: all 0.3s linear;
   white-space: nowrap;
+
+  @include mobile{
+    padding: 10px 13px !important;
+    line-height: normal;
+  }
 
 /* Style */
 background: rgb(31, 74, 226);

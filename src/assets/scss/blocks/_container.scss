@@ -3,5 +3,8 @@
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 30px;
-}
 
+    @include tablet{
+        padding: 0 15px;
+    }
+}
